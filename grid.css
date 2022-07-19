@@ -1,45 +1,37 @@
-body {display: grid;
-grid-template-columns: 1fr 1fr;
-    grid-template-columns: 3fr 1fr 3ft 1ft;
-    grid-template-areas: "header header"
-        "intro history"
-        "articles caption"
-        "footer footer";
-    grid-column-gap: 12px;
-}
-body > header > img {display: block; 
-width:100%;}
-ol {list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;}
-ul {list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: dodgerblue ;}
-li {float: left;
-  border-right:1px solid #bbb;}
-li a {display: block;
-  color: navy;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;}
-li a:hover:not(.active) {background-color: steelblue;}
-.active {background-color: skyblue;}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="museum, exhibit, fables, fantanstic" />
+        <link href="grid.css" rel="stylesheet" />
+<title>title.html</title>
+    
+</head>
+<body>
+     <header>
+       <h1>The Fantastic and the Fake: Fabled Creatures, Beings and Events in the Folklore of East Asia</h1>
+ <nav> <ol>
+  <li><a href="title.html">Title</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="Examples.html">Examples</a></li>
+    <li><a href="Folklore.html">Folklore</a></li>
 
-body > * {
-outline: 1px solid blue;
-}
-body > header {grid-row: 1;
-grid-column: 1/-1}
-
-body > article {grid-area: intro;}
-body > aside {grid-area: history;}
-body > section {grid-area: articles;}
-body > footer {grid-area: footer;}
-
-/* Grid Styles for the Nested Grid */
-section{display: grid;
-grid-template-columns: repeat(2, 1fr);}
-section > h1 {grid-area: 1/1/2/3;}
+        </ol>
+</nav> 
+    </header>
+        <section id= "leftColumn">
+       <h3>Qilin</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Qilin_in_sancai_tuhui.jpg" alt="A Qilin" style="width:400px;height:300px;">
+             </section>
+    
+         <section id= "rightColumn">  
+<h2>Mystical beasts of East Asia</h2>
+<p> In China, Japan and Korea, legendary beasts and deities existed within folktales that were not just as tall tales but stories to warn and delight the unsuspecting audience. These beings were sometimes dangerous but often merely of another world and could be properly dealt with safely if one knew what to do when in the presence of one. Such fables spread far and wide and were passed down to this day, often becoming part of the local history and national symbols as well.</p>
+        </section>
+    <footer>Last updated at:
+       <time datetime="2022-06-30T14:52">June 30 2022 at 2:52 p.m.</time>
+        <a href="mailto:chungjoy@example.com"> chungjoy@example.com </a>
+    </footer>
+        
+</body> 
+</html>
