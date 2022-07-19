@@ -9,7 +9,7 @@ body{background-color: aliceblue;
     font-family: serif; font-size: 1em;}
 body {display: grid;
 grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "header header"
         "nav nav"
         "image article"
