@@ -55,6 +55,5 @@ body > header {grid-row: 1;
 grid-column: 1/-1}
 
 body > article {grid-area: intro;}
-body > nav {grid-area: nav;}
 body > section {grid-area: articles;}
 body > footer {grid-area: footer;}
