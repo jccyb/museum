@@ -31,12 +31,21 @@ img {float: left;}
   clear: both;
   display: table;}
 
+nav.horizontalNavigation li {width: 33%;}
+nav.horizontalNavigation li {display: block;
+         float: left;}
+ nav.horizontalNavigation a {display: block;
+       text-align: center;}
+img {float: left;}
+.clearfix::after {content: "";
+  clear: both;
+  display: table;}
+
 body {display: grid;
-grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 1fr 1fr;
+grid-template-columns: 1ft 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: "header header"
         "intro history"
-        "articles caption"
         "footer footer";
     grid-column-gap: 12px;
 }
@@ -47,8 +56,7 @@ body > header {grid-row: 1;
 grid-column: 1/-1}
 
 body > article {grid-area: intro;}
-body > aside {grid-area: history;}
-body > section {grid-area: articles;}
+body > section {grid-area: history;}
 body > footer {grid-area: footer;}
 
 /* Grid Styles for the Nested Grid */
