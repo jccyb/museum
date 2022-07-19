@@ -45,3 +45,5 @@ body > article {grid-area: intro;}
 body > aside {grid-area: history;}
 body > section {grid-area: articles;}
 body > footer {grid-area: footer;}
+
+section > h1 {grid-area: 1/1/2/3;}
