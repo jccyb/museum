@@ -17,13 +17,13 @@
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
-  color: powderblue;
+  color: #87ceeb;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #0000ff;
+  color: #f2f2f2;
 }
 
 body {display: grid;
