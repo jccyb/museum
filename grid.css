@@ -58,8 +58,3 @@ body > article {grid-area: intro;}
 body > nav {grid-area: nav;}
 body > section {grid-area: articles;}
 body > footer {grid-area: footer;}
-
-/* Grid Styles for the Nested Grid */
-section{display: grid;
-grid-template-columns: repeat(2, 1fr);}
-section > h1 {grid-area: 1/1/2/3;}
