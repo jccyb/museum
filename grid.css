@@ -1,12 +1,33 @@
 body {display: grid;
-grid-template-columns: 3fr 1fr;
-    grid-template-columns: 3fr 1fr 1fr;
+grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr 3ft 1ft;
     grid-template-areas: "header header"
         "intro history"
         "articles caption"
         "footer footer";
     grid-column-gap: 12px;
 }
+body > header > img {display: block; 
+width:100%;}
+ol {list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;}
+ul {list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: dodgerblue ;}
+li {float: left;
+  border-right:1px solid #bbb;}
+li a {display: block;
+  color: navy;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;}
+li a:hover:not(.active) {background-color: steelblue;}
+.active {background-color: skyblue;}
+
 body > * {
 outline: 1px solid blue;
 }
