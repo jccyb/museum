@@ -47,7 +47,7 @@ body > footer {grid-area: footer;}
 section{grid-template-columns: repeat(2, 1fr);}
 section > h1 {grid-area: 1/1/2/3;}
 
-div.gallery {border: 1px solid #ccc;}
+div.gallery {display: contents; border: 1px solid #ccc;}
 
 div.gallery:hover {border: 1px solid #777;}
 
