@@ -44,6 +44,5 @@ body > aside {grid-area: history;}
 body > section {grid-area: articles;}
 body > footer {grid-area: footer;}
 
-section{display: grid;
-grid-template-columns: repeat(2, 1fr);}
+section{grid-template-columns: repeat(2, 1fr);}
 section > h1 {grid-area: 1/1/2/3;}
