@@ -1,16 +1,18 @@
 h1 {
-  color: blue;
+  color: grey;
   font-family: verdana;
   font-size: 300%;
 }
-.topnav {background-color: #0000ff;
+h2 {font-family: fantasy;
+ color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+.topnav {background-color: dimgray;
   color: #f2f2f2;
   overflow: hidden;
 }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
+.topnav a {  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -19,33 +21,20 @@ h1 {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #87ceeb;
+  background-color: lightgray;
   color: #ffffff;
 }
 
 
 body {display: grid;
-grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "header header"
-        "intro history"
-        "articles caption"
-        "footer footer";
-    grid-column-gap: 12px;
-}
-body > * {
-outline: 1px solid blue;
-}
-body > header {grid-row: 1;
-grid-column: 1/-1}
+grid-template-columns: none;
+grid-template-rows: auto auto auto auto auto;}
+body > * {outline: 1px solid grey;}
 
-body > article {grid-area: intro;}
-body > aside {grid-area: history;}
-body > section {grid-area: articles;}
-body > footer {grid-area: footer;}
+body > div {grid-row: auto auto;
+grid-column: auto auto}
 
-section{grid-template-columns: repeat(2, 1fr);}
-section > h1 {grid-area: 1/1/2/3;}
+.image-gallery-header{width: 100%; height: auto;}
 
 div.gallery {border: 1px solid #ccc;}
 
@@ -53,7 +42,9 @@ div.gallery:hover {border: 1px solid #777;}
 
 div.gallery img {width: 100%; height: auto;}
 
-div.desc {padding: 15px; text-align: center;}
+div.desc {grid-row: auto auto;
+grid-column: auto auto;
+    padding: 15px; text-align: center;}
 
 * {box-sizing: border-box;}
 
@@ -73,3 +64,16 @@ div.desc {padding: 15px; text-align: center;}
 .clearfix:after {content: "";
   display: table;
   clear: both;}
+
+.image-gallery{width: 100%; 
+    height: auto; 
+    text-align: center}
+
+.contact-form{width: 100%; 
+    height:auto;}
+
+.card-img-top {
+    max-height: 200px;
+    min-height: 150px;
+    object-fit: cover;
+}
